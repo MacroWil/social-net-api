@@ -18,6 +18,7 @@ module.exports = {
         .select("-__v");
       if (!user) {
         res.status(404).json({ message: "No such ID!" });
+        return;
       }
       res.json(user);
     } catch (err) {
@@ -44,6 +45,7 @@ module.exports = {
       );
       if (!user) {
         return res.status(404).json({ message: "No such ID!" });
+        return;
       }
 
       res.json(user);
@@ -57,6 +59,7 @@ module.exports = {
       const user = await Users.findOneAndDelete({ _id: req.params.userId });
       if (!user) {
         res.status(404).json({ message: "No such ID!" });
+        return;
       }
       await Thoughts.deleteMany({ _id: { $in: user.thoughts } });
       res.json({ message: "User and Thoughts deleted!" });
@@ -74,6 +77,7 @@ module.exports = {
       );
       if (!user) {
         res.status(404).json({ message: "No such ID!" });
+        return;
       }
       res.json(user);
     } catch (err) {
@@ -90,6 +94,7 @@ module.exports = {
       );
       if (!user) {
         res.status(404).json({ message: "No such ID!" });
+        return;
       }
       res.json(user);
     } catch (err) {

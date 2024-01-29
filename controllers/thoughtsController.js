@@ -17,6 +17,7 @@ module.exports = {
       }).select("-__v");
       if (!thought) {
         res.status(404).json({ message: "No such ID!" });
+        return;
       }
       res.json(thought);
     } catch (err) {
@@ -35,6 +36,7 @@ module.exports = {
       });
       if (!thought) {
         res.status(404).json({ message: "No such ID!" });
+        return;
       }
       res.json(thought);
     } catch (err) {
@@ -51,6 +53,7 @@ module.exports = {
       );
       if (!thought) {
         res.status(404).json({ message: "No such ID!" });
+        return;
       }
       res.json(thought);
     } catch (err) {
@@ -75,6 +78,7 @@ module.exports = {
 
       if (!user) {
         res.status(404).json({ message: "Thought deleted, no user found" });
+        return;
       }
       res.json({ message: "Thought deleted" });
     } catch (err) {
@@ -91,6 +95,7 @@ module.exports = {
       );
       if (!thought) {
         res.status(404).json({ message: "No such ID!" });
+        return;
       }
       res.json(thought);
     } catch (err) {
@@ -107,6 +112,7 @@ module.exports = {
       );
       if (!thought) {
         res.status(404).json({ message: "No such ID!" });
+        return;
       }
       res.json(thought);
     } catch (err) {
