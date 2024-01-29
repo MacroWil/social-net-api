@@ -40,4 +40,4 @@ Or, you can email me at macrow.co@gmail.com.
 
 ## Links
 
-Link to YouTube video walkthrough [HERE](https://www.youtube.com/watch?v=HvGlb4WToiI)
+Link to YouTube video walkthrough [HERE](https://www.youtube.com/watch?v=086OJXaMHck)
